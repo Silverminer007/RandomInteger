@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.silverminer.randomseedgui.GenerateController">
+   <Button fx:id="generate" layoutX="262.0" layoutY="188.0" mnemonicParsing="false" onAction="#onGenerate"
+           text="Generate"/>
+   <TextField fx:id="min_value" layoutX="59.0" layoutY="101.0" onAction="#onMinValueChanged" text="0"/>
+   <TextField fx:id="max_value" layoutX="373.0" layoutY="101.0" onAction="#onMaxValueChanged" text="2147483647"/>
+   <Label layoutX="59.0" layoutY="72.0" text="Min Value"/>
+   <Label layoutX="373.0" layoutY="72.0" text="Max Value"/>
+   <TextArea fx:id="output" editable="false" layoutX="38.0" layoutY="246.0" prefHeight="121.0" prefWidth="525.0">
+      <font>
+         <Font size="30.0"/>
+      </font>
+   </TextArea>
+</AnchorPane>
