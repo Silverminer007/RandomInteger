@@ -6,7 +6,7 @@ plugins {
 }
 
 group 'com.silverminer'
-version '1.0-SNAPSHOT'
+version '1.0-SNAPSHOT0001'
 
 repositories {
     mavenCentral()
